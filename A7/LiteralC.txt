@@ -1,0 +1,11 @@
+Asumiendo que la pila ya está creada (s=initialize)
+Entonces:
+if(!empty(s)){ verificamos si la pila estaba inicialmente vacia
+	while(!empty(s)){ iteramos sacando un valor de la pila a la vez guardando ese valor en una 				  misma variable hasta que la pila quede vacia
+		l = pop(s)
+	}
+	mostramos al usuario el valor de l que seria el ultimo pop es decir el ultimo elemento que 		estaba en la pila
+}
+else{
+la pila estaba vacia inicialmente
+}

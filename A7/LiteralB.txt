@@ -1,0 +1,17 @@
+Asumiendo que la pila ya está creada (s=initialize)
+Entonces:
+if (!empty(s)){
+	j = pop(s)
+	if (empty(s))
+		ERROR la pila so poseía un elemento
+	else
+	 i=pop(s)
+	 el segundo elemento es el mostrado por i
+	push(s,i) el elemento que acabamos de sacar lo volvemos a meter
+	push(s,j) el primer elemento que sacamos lo metemos dejando la pila intacta
+}
+else
+ERROR la pila no posee ningun elemento
+
+
+

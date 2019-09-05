@@ -1,0 +1,15 @@
+Asumiendo que la pila ya está creada (s=initialize)
+Entonces:
+if (!empty(s)){ verificamos que la pila no este vacia inicialmente
+	pop(s) sacamos el primer elemento de la pila
+	if (empty(s)) verificamos que si despues de sacar el primer elemento la pila a quedado vacia
+		ERROR la pila so poseía un elemento
+	else
+	 i=pop(s) sacamos el segundo elemento que buscabamos
+	 el segundo elemento es el mostrado por i
+}
+else
+ERROR la pila no posee ningun elemento
+
+
+
