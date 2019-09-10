@@ -28,15 +28,13 @@ if(s->top >= 0){
 (s->top)--;
 }
 }
-/* Dejando la pila vacia
-
 float vacia(Pila *s){
     float a=-1;
     while(!empty(s)){
         pop(s, &a);
                      }
     return a;
-}*/
+}
 
 float intacta(Pila *s){
  Pila otrapila;
@@ -65,20 +63,19 @@ int main()
     push(&unaPila, 3.4);
     push(&unaPila, 6.9);
 
-    /*
-     f=vacia(&unaPila);
-    if(f==-1){
-        cout<<"La pila esta vacia"<<endl;
-    }
-    else {
-        cout<<"El ultimo valor es "<<f<<endl;
-    }
-    */
-    l=intacta(&unaPila);
+    l=intacta(&unaPila);//Deja la pila intacta despues de conseguir el valor
     if(l==-1){
         cout<<"La pila esta vacia"<<endl;
     }
     else {
         cout<<"El ultimo valor es "<<l<<endl;
+    }
+
+    f=vacia(&unaPila); //Deja la pila vacia
+    if(f==-1){
+        cout<<"La pila esta vacia"<<endl;
+    }
+    else {
+        cout<<"El ultimo valor es "<<f<<endl;
     }
 }
